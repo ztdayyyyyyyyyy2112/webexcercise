@@ -41,7 +41,7 @@ function App() {
       })
       
       if (response.ok) {
-        showMessage('✅ Thêm bài báo thành công!', 'success')
+        showMessage(' Thêm bài báo thành công!', 'success')
         loadArticles()
       } else {
         showMessage('❌ Không thể thêm bài báo!', 'error')
@@ -62,8 +62,8 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <h1>📰 Tin Tức Hôm Nay</h1>
-          <p>Trang web với React + Node.js + MongoDB</p>
+          <h1>Tin Tức Nội Bộ Hôm Nay</h1>
+          <p>Trang web up báo nha ae</p>
         </div>
       </header>
 

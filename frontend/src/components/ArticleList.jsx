@@ -12,14 +12,14 @@ function ArticleList({ articles, loading }) {
   if (articles.length === 0) {
     return (
       <div className="empty-state">
-        <p>📭 Chưa có bài báo nào. Hãy thêm bài đầu tiên!</p>
+        <p>hihi Chưa có bài báo nào. Hãy thêm bài đầu tiên!</p>
       </div>
     )
   }
 
   return (
     <section className="articles-section">
-      <h2 className="section-title">📝 Danh Sách Bài Báo</h2>
+      <h2 className="section-title"> Danh Sách Bài Báo</h2>
       <div className="articles-grid">
         {articles.map((article, index) => (
           <article key={article._id} className="article-card" style={{

@@ -37,7 +37,7 @@ function AddArticleForm({ onAdd }) {
   return (
     <section className="form-section">
       <div className="form-header">
-        <h2>✍️ Thêm Bài Báo Mới</h2>
+        <h2>Thêm Bài Báo Mới</h2>
         <p>Chia sẻ tin tức của bạn</p>
       </div>
 
@@ -86,7 +86,7 @@ function AddArticleForm({ onAdd }) {
           className="form-button"
           disabled={submitting}
         >
-          {submitting ? '⏳ Đang gửi...' : '📤 Đăng Bài'}
+          {submitting ? ' Đang gửi...' : ' Đăng Bài'}
         </button>
       </form>
     </section>
