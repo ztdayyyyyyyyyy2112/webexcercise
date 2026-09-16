@@ -82,11 +82,13 @@ app.get('*', (req, res) => {
   });
 });
 
-// Khởi động server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
-});
+// Khởi động server khi chạy trực tiếp; Vercel dùng app như serverless handler.
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
+  });
+}
 
 // Export cho Vercel Serverless
 module.exports = app;
