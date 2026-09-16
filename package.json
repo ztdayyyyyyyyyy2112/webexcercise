@@ -1,0 +1,21 @@
+{
+  "name": "webproject-react",
+  "version": "1.0.0",
+  "description": "Trang web với React + Node.js + MongoDB",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node api/index.js",
+    "start": "node api/index.js",
+    "dev:react": "cd frontend && npm run dev",
+    "build:react": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
