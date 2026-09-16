@@ -67,7 +67,7 @@ app.post('/api/articles', async (req, res) => {
 });
 
 // Serve React static files (production)
-const reactBuildPath = path.join(__dirname, '../frontend/dist');
+const reactBuildPath = path.join(__dirname, '../public');
 app.use(express.static(reactBuildPath));
 
 // Fallback route cho React Router

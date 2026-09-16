@@ -4,5 +4,5 @@ node_modules/
 .DS_Store
 *.log
 .vercel
-frontend/dist
+public/
 frontend/node_modules
