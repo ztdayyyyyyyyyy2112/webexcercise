@@ -12,10 +12,14 @@ function App() {
     setLoading(true)
     try {
       const response = await fetch('/api/articles')
+      if (!response.ok) {
+        throw new Error(`API request failed with status ${response.status}`)
+      }
       const data = await response.json()
       setArticles(data)
     } catch (error) {
       console.error('Lỗi:', error)
+      setArticles([])
       showMessage('❌ Lỗi tải bài báo!', 'error')
     } finally {
       setLoading(false)
@@ -39,6 +43,8 @@ function App() {
       if (response.ok) {
         showMessage('✅ Thêm bài báo thành công!', 'success')
         loadArticles()
+      } else {
+        showMessage('❌ Không thể thêm bài báo!', 'error')
       }
     } catch (error) {
       console.error('Lỗi:', error)
